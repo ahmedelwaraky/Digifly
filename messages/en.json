@@ -1,0 +1,50 @@
+{
+  "Header": {
+    "Home": "Home",
+    "Categories": "Categories",
+    "Contact us": "Contact us",
+    "About": "About us"
+  },
+  "PartOne": {
+    "title": "Part 1",
+    "description": "Utilize the provided Strapi API from the assessment to post user data into your Redux store. You are required to add one user into the 'users' collection and display this data in a table using a GET request. Ensure the implementation of Redux for state management, including both POST requests for adding a user and GET requests for displaying data in the table."
+  },
+  "Form": {
+    "firstName": "First name",
+    "firstNameError": "First name is required.",
+    "lastName": "Last name",
+    "lastNameError": "Last name is required.",
+    "mobileNumber": "Mobile Number",
+    "mobileNumberError1": "Mobile number is required",
+    "mobileNumberError2": "Mobile number is invalid",
+    "email": "Email",
+    "emailError1": "Email is required",
+    "emailError2": "Email is invalid",
+    "send": "Send"
+  },
+  "Table": {
+    "results": "Results",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "mobileNumber": "Mobile Number",
+    "email": "Email"
+  },
+  "PartTwo": {
+    "title": "Part 2",
+    "description": "Implement a map using any library of your choice (Leaflet is recommended). Search for the coordinates of 'Digifly Company' on Google Maps, then place a tooltip at these coordinates. Ensure that the tooltip styling matches the provided design below."
+  },
+  "MapPopup": {
+    "digi": "Digi",
+    "fly": "Fly",
+    "company": "Company",
+    "content": "welcoms you"
+  },
+  "PartThree": {
+    "title": "Part 3",
+    "description": "Implement a text editor that precisely replicates the UI styles provided. It's essential to create the undo and redo functionalities from scratch, along with two additional features of your choice. You may use any package, but creating these functionalities from scratch will be advantageous. Ensure that all text editor functionalities are operational."
+  },
+  "Footer":{
+    "content1": "All Rights Reserved",
+    "content2": "Digifly 2024"
+  }
+}
