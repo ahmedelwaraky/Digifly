@@ -23,7 +23,7 @@ const LanguageSwitch = () => {
           <h6 className="text-sm font-medium">العربية</h6>
           <div className="w-6 h-6 relative">
             <Image
-              src={"/EgyptFlag.png"}
+              src={"https://escolaeuropea.eu/wp-content/uploads/2020/06/Egypt-flag.png"}
               alt="EgyptFlag"
               objectFit="cover"
               layout="fill"
@@ -39,7 +39,7 @@ const LanguageSwitch = () => {
           <h6 className="text-sm font-medium">En</h6>
           <div className="w-6 h-6 relative">
             <Image
-              src={"/EnglandFlag.png"}
+              src={"/https://www.onlygfx.com/wp-content/uploads/2016/08/flag-of-uk.png"}
               alt="EgyptFlag"
               objectFit="cover"
               layout="fill"
