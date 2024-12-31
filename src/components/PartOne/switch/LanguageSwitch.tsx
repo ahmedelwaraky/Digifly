@@ -3,52 +3,51 @@
 import Image from "next/image";
 import { useState } from "react";
 import { useRouter } from "next/navigation";
-
+import Egy from "../../../assets/egy.jpeg";
+import Eng from "../../../assets/eng.png";
 const LanguageSwitch = () => {
   const router = useRouter();
   const [selectedLanguage, setSelectedLanguage] = useState("en");
 
-  const handleLanguageChange = (language: string) => {
-    setSelectedLanguage(language);
-    router.replace(`/${language}`);
+  const handleLanguageChange = () => {
+    const newLanguage = selectedLanguage === "en" ? "ar" : "en";
+    setSelectedLanguage(newLanguage);
+    router.replace(`/${newLanguage}`);
   };
 
   return (
-    <>
-      {selectedLanguage == "en" ? (
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => handleLanguageChange("ar")}
-        >
+    <div
+      className="flex items-center gap-2 cursor-pointer"
+      onClick={handleLanguageChange}
+    >
+      {selectedLanguage === "en" ? (
+        <>
           <h6 className="text-sm font-medium">العربية</h6>
           <div className="w-6 h-6 relative">
             <Image
-              src={"https://escolaeuropea.eu/wp-content/uploads/2020/06/Egypt-flag.png"}
+              src={Egy}
               alt="EgyptFlag"
               objectFit="cover"
               layout="fill"
               className="rounded-full"
             />
           </div>
-        </div>
+        </>
       ) : (
-        <div
-          className="flex items-center gap-2 cursor-pointer"
-          onClick={() => handleLanguageChange("en")}
-        >
+        <>
           <h6 className="text-sm font-medium">En</h6>
           <div className="w-6 h-6 relative">
             <Image
-              src={"/https://www.onlygfx.com/wp-content/uploads/2016/08/flag-of-uk.png"}
-              alt="EgyptFlag"
+              src={Eng}
+              alt="UKFlag"
               objectFit="cover"
               layout="fill"
               className="rounded-full"
             />
           </div>
-        </div>
+        </>
       )}
-    </>
+    </div>
   );
 };
 
